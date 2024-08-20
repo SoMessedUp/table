@@ -1,0 +1,113 @@
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.table-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+.table-container {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table-header {
+  display: flex;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #ddd;
+  font-weight: bold;
+}
+
+.table-header-cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-row {
+  display: flex;
+}
+
+.table-cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pagination span {
+  margin: 0 10px;
+}
+
+/* Медиа-запросы для уменьшения текста на малых экранах */
+@media (max-width: 768px) {
+  .table-header-cell,
+  .table-cell {
+      font-size: 14px; /* Уменьшение размера шрифта */
+      padding: 8px; /* Уменьшение отступов */
+  }
+
+  .pagination button {
+      padding: 8px 12px; /* Уменьшение отступов кнопок */
+      font-size: 14px; /* Уменьшение размера шрифта кнопок */
+  }
+
+  .pagination span {
+      font-size: 14px; /* Уменьшение размера шрифта для страницы */
+  }
+}
+
+@media (max-width: 480px) {
+  .table-header-cell,
+  .table-cell {
+      font-size: 12px; /* Дополнительное уменьшение размера шрифта */
+      padding: 6px; /* Дополнительное уменьшение отступов */
+  }
+
+  .pagination button {
+      padding: 6px 10px; /* Дополнительное уменьшение отступов кнопок */
+      font-size: 12px; /* Дополнительное уменьшение размера шрифта кнопок */
+  }
+
+  .pagination span {
+      font-size: 12px; /* Дополнительное уменьшение размера шрифта для страницы */
+  }
+}
