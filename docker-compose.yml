@@ -4,4 +4,4 @@ services:
     ports:
       - "8085:8085"
     volumes:
-      - ./test-task/build:/app/build
+      - ./frontend/build:/app/build

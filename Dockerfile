@@ -15,7 +15,7 @@ RUN npm install
 COPY ./server ./server
 
 # Копируем все файлы фронтенда
-COPY ./test-task/build ./build
+COPY ./frontend/build ./build
 
 # Порт
 ENV PORT=8085
