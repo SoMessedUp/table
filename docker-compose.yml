@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8085:8085"
+    volumes:
+      - ./test-task/build:/app/build

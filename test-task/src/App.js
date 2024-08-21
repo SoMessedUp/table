@@ -8,7 +8,7 @@ function App() {
 
   // Загрузка данных из api
   useEffect(() => {
-    fetch('http://localhost:3003/api/csv')
+    fetch('http://127.0.0.1:8085/api/csv')
       // Проверяем, успешен ли запрос
       .then((response) => {
         if (!response.ok) {
